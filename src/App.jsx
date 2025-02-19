@@ -12,6 +12,7 @@ import LogIn from './Components/Anth/Login'
 import Signup from './Components/Anth/Signup'
 
 import "./App.css";
+import InProcessPage from "./Pages/InProcessPage";
 
 function App() {
   return (
@@ -19,12 +20,13 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<ProtectedRoute Element={Home} />} />
-        <Route path="/movies" element={<Movies />} />
-        <Route path="/tvshows" element={<TVshows />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/movies" element={<ProtectedRoute Element={Movies} />} />
+        <Route path="/tvshows" element={<ProtectedRoute Element={TVshows} />} />
+        <Route path="/about" element={<ProtectedRoute Element={About} />} />
+        <Route path="/contact" element={<ProtectedRoute Element={Contact} />} />
         <Route path="/logIn" element={<LogIn />} />
         <Route path="/signUp" element={<Signup />} />
+        <Route path='/inprocess' element={<InProcessPage/>}/>
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
