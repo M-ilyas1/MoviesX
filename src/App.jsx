@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './Components/Header';
 import Home from './Pages/Home';
 import TVshows from './Pages/TVshows';
 import Movies from './Pages/Movies';
@@ -12,7 +11,6 @@ import LogIn from './Components/Anth/Login'
 import Signup from './Components/Anth/Signup'
 
 import "./App.css";
-import InProcessPage from "./Pages/InProcessPage";
 
 function App() {
   return (
@@ -26,7 +24,6 @@ function App() {
         <Route path="/contact" element={<ProtectedRoute Element={Contact} />} />
         <Route path="/logIn" element={<LogIn />} />
         <Route path="/signUp" element={<Signup />} />
-        <Route path='/inprocess' element={<InProcessPage/>}/>
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
