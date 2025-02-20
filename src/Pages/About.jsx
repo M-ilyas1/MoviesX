@@ -2,7 +2,7 @@ const AboutUs = () => {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-gray-950 py-15">
       <div className="w-[70%] flex bg-gray-800 p-8 shadow-lg rounded-xl">
-        {/* Left Side Content */}
+    
         <div className="w-1/2 flex flex-col justify-center p-6">
           <h2 className="text-2xl font-bold text-white">About Us</h2>
           <p className="mt-6 text-white">
@@ -15,7 +15,7 @@ const AboutUs = () => {
             continuously strive to enhance our services and exceed expectations.
           </p>
         </div>
-        {/* Right Side Image */}
+  
         <div className="w-1/2 flex items-center justify-center">
           <img 
             src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/faa177cd-d8d3-41c3-b280-304677328f14/de3i302-c1a020da-9333-4af6-9f85-d4b4e71e8ae5.jpg/v1/fill/w_1280,h_1024,q_75,strp/bollywood_movie_poster_by_yferdianto_de3i302-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcL2ZhYTE3N2NkLWQ4ZDMtNDFjMy1iMjgwLTMwNDY3NzMyOGYxNFwvZGUzaTMwMi1jMWEwMjBkYS05MzMzLTRhZjYtOWY4NS1kNGI0ZTcxZThhZTUuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.iiEgd9A3ibX56rci1naACpjZ8XJXefNmGyTlES6PaZ8" 

@@ -17,7 +17,7 @@ import InProcessPage from "./Pages/InProcessPage";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<ProtectedRoute Element={Home} />} />
         <Route path="/movies" element={<ProtectedRoute Element={Movies} />} />

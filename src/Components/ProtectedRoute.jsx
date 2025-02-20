@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "./Header";
 
 const ProtectedRoute = ({ Element }) => {
   const navigate = useNavigate();
@@ -11,7 +12,12 @@ const ProtectedRoute = ({ Element }) => {
     }
   }, [navigate]);
   
-  return <Element />;
+  return (
+    <>
+      <Header />
+      <Element />
+    </>
+)
 };
 
 export default ProtectedRoute;

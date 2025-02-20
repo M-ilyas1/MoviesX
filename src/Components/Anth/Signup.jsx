@@ -8,9 +8,9 @@ const SignUp = () => {
     userEmail: '',
     password: ''
   })
-  const submitHandler = (e) => {
+  const submitHandler = (e)   => {
     e.preventDefault()
-    console.log(details);
+    // console.log(details);
     localStorage.setItem('logInData', JSON.stringify(details))
     navigate('/logIn')
   }

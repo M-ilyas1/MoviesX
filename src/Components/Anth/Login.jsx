@@ -20,11 +20,11 @@ const Login = () => {
       logInData.password == details.password
     ) {
       localStorage.setItem("login", "true");
-      navigate("/");
       alert(`WellCome to MoviesX App - ${logInData.userName}`)
+      navigate("/");
     } else {
       alert("User is Not Authenticated - Please SignUp First");
-      navigate("/signUp");
+      navigate("/Signup");
     }
 
     setDetails({ userEmail: "", password: "" });
