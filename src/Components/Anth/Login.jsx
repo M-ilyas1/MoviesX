@@ -11,7 +11,7 @@ const Login = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    let logInData = JSON.parse(localStorage.getItem("logInData"));
+    let logInData = JSON.parse(localStorage.getItem("login"));
     console.log(details);
     console.log(logInData);
 
@@ -24,7 +24,7 @@ const Login = () => {
       navigate("/");
     } else {
       alert("User is Not Authenticated - Please SignUp First");
-      navigate("/Signup");
+      navigate("/signup");
     }
 
     setDetails({ userEmail: "", password: "" });
@@ -63,11 +63,8 @@ const Login = () => {
           </button>
         </form>
         <p className="mt-4 text-center text-gray-400">
-          Don`t have an account?
-          <a href="/signup" className="text-blue-400 hover:underline">
-            {" "}
-            Sign up
-          </a>
+          Don`t have an account? 
+          <a href="/signup" className="text-blue-400 hover:underline"> Sign up</a>
         </p>
       </div>
     </div>

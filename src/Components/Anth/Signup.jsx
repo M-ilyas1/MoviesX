@@ -11,7 +11,7 @@ const SignUp = () => {
   const submitHandler = (e)   => {
     e.preventDefault()
     // console.log(details);
-    localStorage.setItem('logInData', JSON.stringify(details))
+    localStorage.setItem('login', JSON.stringify(details))
     navigate('/logIn')
   }
   return (
