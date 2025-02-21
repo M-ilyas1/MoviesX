@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const ProtectedRoute = ({ Element }) => {
   const navigate = useNavigate();
@@ -8,7 +9,7 @@ const ProtectedRoute = ({ Element }) => {
   useEffect(() => {
     const login = localStorage.getItem("logInData");
     if (!login) {
-      navigate("/logIn", { replace: true });
+      navigate("/logIn");
     }
   }, [navigate]);
   
@@ -16,6 +17,7 @@ const ProtectedRoute = ({ Element }) => {
     <>
       <Header />
       <Element />
+      <Footer />
     </>
 )
 };

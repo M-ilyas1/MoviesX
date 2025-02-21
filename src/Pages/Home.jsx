@@ -35,9 +35,9 @@ const Home = () => {
   return (
     <div className="flex px-[100px] p-10 bg-black font-mono">
       <div className="flex flex-wrap gap- max-auto">
-        {moviesData.map((items, index) => {
+        {moviesData.map((items) => {
           return (
-              <div key={index} className="w-[20%] border-amber-50 border">
+              <div key={items.id} className="w-[20%] border-amber-50 border">
                 <Link to={items.movie}>
                   <img src={items.image} alt="" />
                   <h2 className="text-white text-center p-2 font-bold">
