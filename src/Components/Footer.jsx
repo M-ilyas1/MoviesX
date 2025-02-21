@@ -32,8 +32,9 @@ const Footer = () => {
         </div>
 
         <div className="text-center text-gray-400 text-sm mt-6">
-          &copy; {new Date().getFullYear()} MovieHub. All rights reserved.
+          &copy; {new Date().getFullYear()} <span className="text-blue-500">MoviesX</span>. All rights reserved.
         </div>
+        <hr />
       </div>
     </footer>
   );
