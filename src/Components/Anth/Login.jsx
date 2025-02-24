@@ -11,7 +11,14 @@ const Login = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    let logInData = JSON.parse(localStorage.getItem("login"));
+    let logInData = JSON.parse(localStorage.getItem("logInData"));
+
+    if(!logInData){
+      alert('No account found! Please Sign Up first.');
+      navigate('/signUp')
+      return;
+    }
+
     console.log(details);
     console.log(logInData);
 
@@ -24,7 +31,7 @@ const Login = () => {
       navigate("/");
     } else {
       alert("User is Not Authenticated - Please SignUp First");
-      navigate("/signup");
+      navigate("/signUp");
     }
 
     setDetails({ userEmail: "", password: "" });

@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-6 flex justify-center border-t-amber-50 border-t-2">
+    <footer className="bg-black text-white py-6 flex justify-center py-10">
       <div className="w-[90%] ">
         <div className="flex flex-col md:flex-row items-center justify-between px-4">
         <h1 className="text-3xl font-mono"><Link to='/'>Movies<span className="text-blue-500 font-extrabold text-4xl">X</span></Link></h1>
@@ -32,9 +32,8 @@ const Footer = () => {
         </div>
 
         <div className="text-center text-gray-400 text-sm mt-6">
-          &copy; {new Date().getFullYear()} <span className="text-blue-500">MoviesX</span>. All rights reserved.
+          &copy; 2025 <span className="text-blue-500">MoviesX</span>. All rights reserved.
         </div>
-        <hr />
       </div>
     </footer>
   );

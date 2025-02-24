@@ -3,7 +3,6 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -19,9 +18,8 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          form.current.reset(); // Corrected reset function
-        },
-        (error) => {
+          form.current.reset();
+        }, (error) => {
           console.log("FAILED...", error.text);
         }
       );
@@ -49,7 +47,7 @@ const Contact = () => {
           <input
             type="text"
             placeholder="Full name"
-            name="from_name" // Updated to match email template
+            name="from_name"
             required
             className="w-full p-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />

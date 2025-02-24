@@ -5,14 +5,14 @@ const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    const user = localStorage.getItem("login");
+    const user = localStorage.getItem("logInData");
     if (user) {
       setIsLoggedIn(true);
     }
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem("login");
+    localStorage.removeItem("logInData");
     setIsLoggedIn(false);
   };
 
